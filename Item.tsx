@@ -14,13 +14,13 @@ const styles = StyleSheet.create({
   },
 });
 
-interface ItemProps {
-  title: string;
+export interface ItemProps {
+  id: string;
 }
 export default function Item(props: ItemProps): React.JSX.Element {
   return (
     <View style={styles.container}>
-      <Text>{props.title}</Text>
+      <Text>{props.id}</Text>
     </View>
   );
 }
